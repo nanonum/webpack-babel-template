@@ -1,4 +1,13 @@
+require("babel-polyfill");
+
+// lib
 var _ = require('lodash');
+
+
+// module
+import Model from './model';
+const RequiredModel = require('./requiredmodel')
+
 
 // import 'slick-carousel';
 // import $ from 'jquery';
@@ -16,7 +25,17 @@ class Es6Class {
 }
 
 $(function(){
-  console.log('2:5');
+
+  // jquery + lodash
+  // _.each($('li'), function(el){
+  //   console.log(el);
+  // });
+
+  var model = new Model();
+  var requiredmodel = new RequiredModel();
+
+
+
   var k = new Es6Class('test');
   k.meow();
   var model = require('./model');

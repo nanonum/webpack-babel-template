@@ -1,4 +1,4 @@
-# webpack + gulp + browser-sync template
+# webpack + babel + gulp + browser-sync template
 
 ver 0.5あたり
 
@@ -10,11 +10,10 @@ webpackとgulpを同時起動し各ファイルをコンパイルするテンプ
 
 
 ## インストール
-git cloneの後 npm installとnpm link typescriptする。link忘れると怒られる。
+git cloneの後 npm install。
 
 ```bash
 $ npm install
-$ npm link typescript
 ```
 
 ## start
@@ -35,9 +34,6 @@ $ npm webpack-watch
 ```
 などで単体起動も可能。
 
-### 使ってない
-- webpack-plainjs
-  tsではない普通のjsを使う場合に残してある
 
 ---
 
@@ -58,7 +54,7 @@ gulp, webpack, browser-syncを平行起動、gulpとwebpackでhtml, cssまたは
 
 ## webpack
 ```js
-/src/ts/app.ts
+/src/js/app.js
 ```
 をコンパイルし, /dist/app.bundle.jsとして保存
 

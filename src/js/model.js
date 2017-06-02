@@ -1,7 +1,11 @@
 'use strict'
-module.exports = {
-  test: function(str) {
-     console.log('外部ファイルのモジュール', str);
-    //  $('body').appendChild($('div').text(str))
+export default class Model {
+  constructor (){
+    this.init();
   }
+
+  init(){
+    console.log('init model');
+  }
+
 }
